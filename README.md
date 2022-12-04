@@ -14,6 +14,7 @@ Main, ScrapeWebsite, DisplayData.  At the time of this publication DisplayData
 is incomplete and only displayes a single set of data.  The program should be
 executed from the Main.py script with the ScrapeWebsite.py & DisplayData.py
 located in the same file directory.
+
 ______________
 Functionality:
 
@@ -29,6 +30,7 @@ row headings <td> using .get_text() and sorted/separated by ','.  These are then
 restructured into dictionaries that are output into a .json file which has been
 uploaded here on the project.
 
+ 
 The DisplayData.py is incomplete at this time, but currently utilizes the
 Bokeh library to create a useful graphic for the user to compair death rates
  due to covid by country.
