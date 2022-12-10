@@ -10,10 +10,12 @@ json
 Bokeh
 
 With these libraries installed you will need to download the following 3 scripts:
-Main, ScrapeWebsite, DisplayData.  At the time of this publication DisplayData
-is incomplete and only displayes a single set of data.  The program should be
-executed from the Main.py script with the ScrapeWebsite.py & DisplayData.py
-located in the same file directory.
+Main, ScrapeWebsite, DisplayData.All of these scripts have been completed and are 
+working great.The program should be executed from the Main.py script with the
+ ScrapeWebsite.py & DisplayData.py located in the same file directory.Upon execution
+of the main.py a webpage should pop up. This webpage contains three selectable tabs to
+organize the different plots made by DisplayData.py.The ScrapeWebsite.py will also build
+a new Scrapejson.Json file that will stored in the directory selected by the user.
 
 ______________
 Functionality:
@@ -31,9 +33,11 @@ restructured into dictionaries that are output into a .json file which has been
 uploaded here on the project.
 
  
-The DisplayData.py is incomplete at this time, but currently utilizes the
-Bokeh library to create a useful graphic for the user to compair death rates
- due to covid by country.
+The DisplayData.py utilizes the Bokeh library to create a useful graphic for the 
+user to compair death rates due to covid by country. When the main script is ececuted,
+out display data script builds the plots and opens a web page to display the data. There
+are three tabs on this webpage and each clearly displays differnt information from each country.
+
 
 
 
