@@ -13,7 +13,7 @@ def DisplayData(JsonFile):
     except:
         print('ERROR! File failed to load!')
         return -1
-
+    #Build data frames for plot use
     Countries = []
     Deaths = []
     NormalizedDeaths = []
@@ -27,6 +27,7 @@ def DisplayData(JsonFile):
         
     newPallet = []
     colors = itertools.cycle(Paired12)
+        #adding new color to each bar for easier viewing
     for i, color in zip(range(len(Countries)), colors):
         newPallet.append(color)
     source = ColumnDataSource(data=dict(Countries = Countries, Deaths = Deaths, NormalizedDeaths = NormalizedDeaths,DailyDeaths = DailyDeaths,color = newPallet))
@@ -39,7 +40,7 @@ def DisplayData(JsonFile):
     tab1 = TabPanel(child=p1, title = "Culmulative Death Totals")
 
     #----------------------------------------------------------------------------------------------
-    
+    #repeated graph with new data-Normalized deaths
 
     newPallet = []
     colors = itertools.cycle(Paired12)
@@ -55,7 +56,7 @@ def DisplayData(JsonFile):
     tab2 = TabPanel(child=p2, title = "Normalized Death Totals")
 
     #-----------------------------------------------------------------------------------------------
-
+    #repeated graph with new data-Daily deaths
     newPallet = []
     colors = itertools.cycle(Paired12)
     for i, color in zip(range(len(Countries)), colors):
